@@ -10,11 +10,13 @@ To simplify this task, we will again use the popular python library for machine 
 1. Navigate to the `__main__` function of `src/ex1_linear_svm.py` and load the iris dataset from `sklearn.datasets`.
 2. Get access to the data, the labels and the class names. In the lecture, you saw how an SVM can be used for the binary classification problem. Find out how `sklearn` implements multi-class classification.
 3. Split the dataset into training and test data using ``sklearn.model_selection.train_test_split``. The test set should contain 25% of the data. Use `random_state=29` in the split function to generate reproducible results.
-    1. Implement a function `train_test_svc` to create a Linear SVM classifier from the ``sklearn.svm.LinearSVC`` class and fit it to the training data.
-    2. In the same function, test the classifier on the test set and evaluate its performance by computing the accuracy. ``sklearn.metrics`` provides functions to evaluate this metric. Express the accuracy as a percentage and round to one decimal place. Your function `train_test_svc` should return the classifier and the accuracy value. 
-4. Print the accuracy.
+4.1. Implement a function `train_test_svc` to create a Linear SVM classifier from the ``sklearn.svm.LinearSVC`` class and fit it to the training data.
 
-5. Plot the confusion matrix using `sklearn.metrics.ConfusionMatrixDisplay.from_estimator`. Use `display_labels=iris.target_names` for better visualization.
+4.2. In the same function, test the classifier on the test set and evaluate its performance by computing the accuracy. ``sklearn.metrics`` provides functions to evaluate this metric. Express the accuracy as a percentage and round to one decimal place. Your function `train_test_svc` should return the classifier and the accuracy value. 
+
+5. Print the accuracy.
+
+6. Plot the confusion matrix using `sklearn.metrics.ConfusionMatrixDisplay.from_estimator`. Use `display_labels=iris.target_names` for better visualization.
 
 ### Task 2: Classification with soft-margin SVMs
 
