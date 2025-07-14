@@ -119,7 +119,10 @@ if __name__ == "__main__":
         "time_series_covid19_confirmed_global.csv"
     )
 
-    # only choose first 82 days
+    # take a look at the dataframe with print(df.head()) to see how the data is structured.
+    # head() will return the first 5 rows of the dataframe.
+
+    # only choose first 78 days.
     df = df[df.columns[:82]]
 
     # compute total number of cases
