@@ -58,7 +58,8 @@ Another way to evaluate the performance of a model is the [ROC-Curve](https://en
 
 You can also use SVMs for regression. In this exercise, we will take a brief look at time-series predictions. The goal is to infer new values from a set of old observations. For this we will look at the number of Covid-19 cases.
 
-0. Open `src/ex3_time_series.py`, move to the `__main__` function and have a look at the code. Inspect the dataset closely and make sure you understand what information the columns depict.
+0. Open `src/ex3_time_series.py`, move to the `__main__` function and have a look at the code. Inspect the dataset closely and make sure you understand what information the columns depict. To do this, you can use the `head()` function of the pandas dataframe.
+
 1. In the code we generate two arrays: `raw_data` and `raw_data_short`. Plot both curves with the `plot_curve` function. Do you notice any change in behavior in these curves? Is there a point were the rate of change increases? The data that lies before this point won't be considered anymore.
 
 2. With the number of covid cases for the last week (7 days), we want to predict the expected number of cases for the next 5 days. Set the number of days you want to forecast and the number of days that will be taken into account for the forecast.
