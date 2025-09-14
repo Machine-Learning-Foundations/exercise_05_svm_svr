@@ -25,6 +25,6 @@ def test_train_test_svc():
 
     # ensure accuracy matches accuracy_score
     y_pred = model.predict(x_test)
-    expected_accuracy = (accuracy_score(y_test, y_pred) * 100).round(1)
+    expected_accuracy = np.round(accuracy_score(y_test, y_pred) * 100, 1)
     assert np.allclose(accuracy, expected_accuracy)
     assert np.allclose(accuracy, 66.7)
