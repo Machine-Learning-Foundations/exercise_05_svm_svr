@@ -43,7 +43,7 @@ A lot of machine learning approaches are configurable. This means that there are
 
 Now we need to find the best values for our hyperparameters. Implement the hyperparameter search in the function `cv_svm` following these steps:
 
-6.1. Define a dictionary of parameters that you want to cross-validate. (Hint: Reasonable values for $C$ range from 0.01 ($10^{-2}$) to 1000 ($10^3$) in logarithmic steps, while for kernels it is usually sufficient to test `linear`, `rgb` and `poly`.)
+6.1. Define a dictionary of parameters that you want to cross-validate. Reasonable values for $C$ range from 0.01 ($10^{-2}$) to 1000 ($10^3$) in logarithmic steps (i.e. `"C": [0.01, 0.1, 1, 10, 100, 1000]`), while for kernels it is usually sufficient to test `linear`, `rgb` and `poly`.
 
 6.2. Initialize your model using the `sklearn.svm.SVC` class. Use the ``sklearn.model_selection.GridSearchCV`` class to find optimal hyperparameters for this task.  
 
